@@ -51,13 +51,13 @@
 
    在虚拟介质管理器里面选中盘片之后选择多重加载，再新建的时候直接使用多重加载的镜像文件
 
-   ![多重加载](img\多重加载.png)
+   ![多重加载](img/多重加载.png)
 
-   ![多重加载1](img\多重加载1.png)
+   ![多重加载1](img/多重加载1.png)
 
 2. 根据要求创建所有需要的虚拟机
 
-   ![虚拟机安装完成](img\虚拟机安装完成.png)
+   ![虚拟机安装完成](img/虚拟机安装完成.png)
 
 3. 按照实验要求拓扑图配置虚拟机网络
 
@@ -65,49 +65,49 @@
 
      - 配置四块网卡分别为"NAT网络"“Host Only”“内部网络（intnet1）”和“内部网络（intnet2）”
 
-     ![gateway-network-card](img\gateway-network-card.png)
+     ![gateway-network-card](img/gateway-network-card.png)
 
      内部网络详细配置
 
-     ![intnet1-details](img\intnet1-details.png)
+     ![intnet1-details](img/intnet1-details.png)
 
      Host-Only中DHCP服务器详细配置
 
-     ![host-only-DHCP](img\host-only-DHCP.png)
+     ![host-only-DHCP](img/host-only-DHCP.png)
 
      开启作为网关的虚拟机，查看各个网卡地址
 
-     ![gateway-network-address](img\gateway-network-address.png)
+     ![gateway-network-address](img/gateway-network-address.png)
 
    - 靶机和攻击者主机网络配置
 
      按照实验要求网络拓扑配置winXP-Victim-1和kali-Victim-1网络为内部网络“intnet1”
 
-     ![winXP-Victim-1-network](img\winXP-Victim-1-network.png)
+     ![winXP-Victim-1-network](img/winXP-Victim-1-network.png)
 
-     ![kali-victim-1-network](img\kali-victim-1-network.png)
+     ![kali-victim-1-network](img/kali-victim-1-network.png)
 
      配置winXP-Victim-2和debian-Victim-1网络为内部网络“intnet2”
 
-     ![winXP-victim-2-network](img\winXP-victim-2-network.png)
+     ![winXP-victim-2-network](img/winXP-victim-2-network.png)
 
-     ![debian-victim-2-network](img\debian-victim-2-network.png)
+     ![debian-victim-2-network](img/debian-victim-2-network.png)
 
      攻击者主机kali-Attacker为NAT网络
 
-     ![kali-attacker-network](img\kali-attacker-network.png)
+     ![kali-attacker-network](img/kali-attacker-network.png)
 
      开启各个虚拟机并查看网络地址
 
-     ![winXP-victim-1-network-address](img\winXP-victim-1-network-address.png)
+     ![winXP-victim-1-network-address](img/winXP-victim-1-network-address.png)
 
-     ![kali-victim-1-network-address](img\kali-victim-1-network-address.png)
+     ![kali-victim-1-network-address](img/kali-victim-1-network-address.png)
 
-     ![winXP-victim-2-network-address](img\winXP-victim-2-network-address.png)
+     ![winXP-victim-2-network-address](img/winXP-victim-2-network-address.png)
 
-     ![debian-victim-2-network-address](img\debian-victim-2-network-address.png)
+     ![debian-victim-2-network-address](img/debian-victim-2-network-address.png)
 
-     ![kali-attacker-network-address](img\kali-attacker-network-address.png)
+     ![kali-attacker-network-address](img/kali-attacker-network-address.png)
 
      整理出各个虚拟机对应的IP地址如下：
 
@@ -129,15 +129,15 @@
 
 - [x] 靶机可以直接访问攻击者主机
 
-![connect1](img\connect1.png)
+![connect1](img/connect1.png)
 
 - [x] 攻击者主机无法直接访问靶机
 
-  ![connect2](img\connect2.png)
+  ![connect2](img/connect2.png)
 
 - [x] 网关可以直接访问攻击者主机和靶机
 
-  ![connect3](img\connect3.png)
+  ![connect3](img/connect3.png)
 
 - [x] 靶机的所有对外上下行流量必须经过网关
 
@@ -148,11 +148,11 @@
   /usr/sbin/tcpdump -i enp0s9 # etc
   ```
 
-![connect4](img\connect4.png)
+![connect4](img/connect4.png)
 
 - [x] 所有节点均可以访问互联网
 
-![connect5](img\connect5.png)
+![connect5](img/connect5.png)
 
 ## 参考链接
 
