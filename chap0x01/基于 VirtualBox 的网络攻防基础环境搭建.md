@@ -158,7 +158,7 @@
 
 [2021 秋教学日历 - 传媒信安教学 Wiki (gitee.io)](https://c4pr1c3.gitee.io/cuc-wiki/ns/2021/calendar.html)
 
-[2020-ns-public-LyuLumos/基于 VirtualBox 的网络攻防基础环境搭建.md at ch0x01 · CUCCS/2020-ns-public-LyuLumos (github.com)](https://github.com/CUCCS/2020-ns-public-LyuLumos/blob/ch0x01/ch0x01/基于 VirtualBox 的网络攻防基础环境搭建.md)
+[2020-ns-public-LyuLumos/基于 VirtualBox 的网络攻防基础环境搭建.md](https://github.com/CUCCS/2020-ns-public-LyuLumos/blob/ch0x01/ch0x01/基于 VirtualBox 的网络攻防基础环境搭建.md)
 
 [第一章课后实验详解](https://www.bilibili.com/video/BV1CL41147vX?p=12)
 
