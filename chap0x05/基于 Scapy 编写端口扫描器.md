@@ -126,6 +126,12 @@ ans.summary() # flag为SA表示开放，RA表示关闭
 | 2    | S -> C   | UDP+port(n) 响应数据 | 无响应/其他拒绝反馈报文    |
 |      | 状态推断 | 开放 ✅               | 开放 ✅ / 关闭 ⛔ / 被过滤 ⚠️ |
 
+close：向各个被扫描的 UDP 端口发送零字节的 UDP 数据包，如果收到一个 ICMP 不可到达的回应，则认为这个端口是关闭的
+
+open：对于没有回应的端口则认为是开放的
+
+Filtered：如果目标主机安装有防火墙或其它可以过滤数据包的软硬件,发出 UDP 数据包后,将可能得不到任何回应。
+
 ## 实验过程
 
 #### 端口状态模拟
@@ -199,12 +205,15 @@ ans.summary() # flag为SA表示开放，RA表示关闭
     ![TCP_connect_scan_open_nmap](img/TCP_connect_scan_open_nmap.png)
 
 - Filtered
-  - python编程
-
-    ![TCP_connect_scan_filtered_code](img/TCP_connect_scan_filtered_code.png)
-
+  
+![TCP_filtered](img/TCP_filtered.png)
+  
+- python编程
+  
+  ![TCP_connect_scan_filtered_code](img/TCP_connect_scan_filtered_code.png)
+  
   - 靶机抓包
-
+  
     ![TCP_connect_scan_filtered_catch_packet](img/TCP_connect_scan_filtered_catch_packet.png)
   
   - nmap复刻
@@ -230,8 +239,6 @@ ans.summary() # flag为SA表示开放，RA表示关闭
     ![TCP_stealth_scan_close_nmap](img/TCP_stealth_scan_close_nmap.png)
 
 - Open
-
-  ![TCP_connect_scan_open](img/TCP_connect_scan_open.png)
 
   - python编程
 
@@ -327,8 +334,6 @@ ans.summary() # flag为SA表示开放，RA表示关闭
 
 - Open
 
-  ![open_apache2](img/open_apache2.png)
-
   - python编程
 
     ![TCP_fin_scan_open_code](img/TCP_fin_scan_open_code.png)
@@ -374,8 +379,6 @@ ans.summary() # flag为SA表示开放，RA表示关闭
     ![TCP_null_scan_close_nmap](img/TCP_null_scan_close_nmap.png)
 
 - Open
-
-  ![open_apache2](img/open_apache2.png)
 
   - python编程
 
