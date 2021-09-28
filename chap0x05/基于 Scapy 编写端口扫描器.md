@@ -201,15 +201,15 @@ ans.summary() # flag为SA表示开放，RA表示关闭
 - Filtered
   - python编程
 
-    ![TCP connect scan_filtered_code](img/TCP connect scan_filtered_code.png)
+    ![TCP_connect_scan_filtered_code](img/TCP_connect_scan_filtered_code.png)
 
   - 靶机抓包
 
-    ![TCP connect scan_filtered_catch_packet](img/TCP connect scan_filtered_catch_packet.png)
+    ![TCP_connect_scan_filtered_catch_packet](img/TCP_connect_scan_filtered_catch_packet.png)
   
   - nmap复刻
   
-    ![TCP connect scan_filtered_nmap](img/TCP connect scan_filtered_nmap.png)
+    ![TCP_connect_scan_filtered_nmap](img/TCP_connect_scan_filtered_nmap.png)
 
 #### TCP stealth scan
 
@@ -217,17 +217,17 @@ ans.summary() # flag为SA表示开放，RA表示关闭
 
   - [python编程](https://github.com/CUCCS/2021-ns-public-cmy123988/blob/chap0x05/chap0x05/code/TCP%20stealth%20scan.py)
 
-    ![TCP_connect_scan_close_code](img/TCP_stealth _scan_close_code.png)
+    ![TCP_stealth_scan_close_code](img/TCP_stealth_scan_close_code.png)
 
   - 靶机抓包
 
-    ![TCP_connect_scan_close_catch_packet](img/TCP_stealth _scan_close_catch_packet.png)
+    ![TCP_stealth_scan_close_catch_packet](img/TCP_stealth_scan_close_catch_packet.png)
 
   - nmap复刻
 
     `nmap -sS -p 80 172.16.111.106`
 
-    ![TCP_connect_scan__close_nmap](img/TCP_stealth _scan_close_nmap.png)
+    ![TCP_stealth_scan_close_nmap](img/TCP_stealth_scan_close_nmap.png)
 
 - Open
 
@@ -235,15 +235,15 @@ ans.summary() # flag为SA表示开放，RA表示关闭
 
   - python编程
 
-    ![TCP_stealth _scan_open_code](img/TCP_stealth _scan_open_code.png)
+    ![TCP_stealth_scan_open_code](img/TCP_stealth_scan_open_code.png)
 
   - 靶机抓包
 
-    ![TCP_stealth _scan_open_catch_packet](img/TCP_stealth _scan_open_catch_packet.png)
+    ![TCP_stealth_scan_open_catch_packet](img/TCP_stealth_scan_open_catch_packet.png)
 
   - nmap复刻
 
-    ![TCP_stealth _scan_open_nmap](img/TCP_stealth _scan_open_nmap.png)
+    ![TCP_stealth_scan_open_nmap](img/TCP_stealth_scan_open_nmap.png)
 
 - Filtered
 
@@ -265,11 +265,11 @@ ans.summary() # flag为SA表示开放，RA表示关闭
 
   - [python编程](https://github.com/CUCCS/2021-ns-public-cmy123988/blob/chap0x05/chap0x05/code/TCP_Xmas_scan.py)
 
-    ![TCP_Xmas_scan_close_code](img/TCP_Xmas _scan_close_code.png)
+    ![TCP_Xmas_scan_close_code](img/TCP_Xmas_scan_close_code.png)
 
   - 靶机抓包
 
-    ![TCP_Xmas_scan_close_catch_packet](img/TCP_Xmas _scan_close_catch_packet.png)
+    ![TCP_Xmas_scan_close_catch_packet](img/TCP_Xmas_scan_close_catch_packet.png)
 
   - nmap复刻
 
@@ -331,7 +331,7 @@ ans.summary() # flag为SA表示开放，RA表示关闭
 
   - python编程
 
-    ![TCP_fin_scan_open_code](img/TCP_fin _scan_open_code.png)
+    ![TCP_fin_scan_open_code](img/TCP_fin_scan_open_code.png)
 
   - 靶机抓包
 
@@ -463,7 +463,7 @@ ans.summary() # flag为SA表示开放，RA表示关闭
 
 - **通过本章网络扫描基本原理的学习，试推测应用程序版本信息的扫描原理，和网络漏洞的扫描原理。**
 
-**应用程序版本信息：**利用nmap的功能
+**应用程序版本信息**:利用nmap的功能
 
 首先检查open与open|filtered状态的端口是否在排除端口列表内，如果在排除列表，将该端口剔除。
 
@@ -477,7 +477,7 @@ ans.summary() # flag为SA表示开放，RA表示关闭
 
 如果探测到应用程序是SunRPC，那么调用brute-force RPC grinder进一步探测具体服务。
 
-**网络漏洞的扫描原理：**也可以利用nmap或其他扫描工具的基本功能组合实现
+**网络漏洞的扫描原理**:也可以利用nmap或其他扫描工具的基本功能组合实现
 
 第一阶段：发现目标主机或网络。技术：主机发现，PING 扫射（Ping sweep）
 
@@ -503,14 +503,14 @@ Hping3：Hping3也可以对目标端口进行扫描。Hping3支持指定TCP各�
 
 ## 参考链接
 
-[Port scanning using Scapy - Infosec Resources (infosecinstitute.com)](https://resources.infosecinstitute.com/topic/port-scanning-using-scapy/)
+- [Port scanning using Scapy - Infosec Resources (infosecinstitute.com)](https://resources.infosecinstitute.com/topic/port-scanning-using-scapy/)
+- [自己动手编程实现并讲解TCP connect scan/TCP stealth scan/TCP XMAS scan/UDP scan_jackcily的博客-CSDN博客](https://blog.csdn.net/jackcily/article/details/83117884)
 
-[自己动手编程实现并讲解TCP connect scan/TCP stealth scan/TCP XMAS scan/UDP scan_jackcily的博客-CSDN博客](https://blog.csdn.net/jackcily/article/details/83117884)
+- [课件第五章](https://c4pr1c3.github.io/cuc-ns-ppt/chap0x05.md.html#/tcp-xmas-scan)
 
-[课件第五章](https://c4pr1c3.github.io/cuc-ns-ppt/chap0x05.md.html#/tcp-xmas-scan)
+- [课本第五章](https://c4pr1c3.gitee.io/cuc-ns/chap0x05/main.html)
 
-[课本第五章](https://c4pr1c3.gitee.io/cuc-ns/chap0x05/main.html)
+- [CUCCS/2020-ns-public-LyuLumos](https://github.com/CUCCS/2020-ns-public-LyuLumos/tree/ch0x05/ch0x05#tcp-connect-scan)
 
-[CUCCS/2020-ns-public-LyuLumos](https://github.com/CUCCS/2020-ns-public-LyuLumos/tree/ch0x05/ch0x05#tcp-connect-scan)
+- [Nmap、Zmap、Masscan](https://blog.51cto.com/xiaogongju/2068513)
 
-[Nmap、Zmap、Masscan_](https://blog.51cto.com/xiaogongju/2068513)
