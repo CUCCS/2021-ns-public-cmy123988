@@ -206,8 +206,9 @@ Filtered：如果目标主机安装有防火墙或其它可以过滤数据包的
 
 - Filtered
   
+
 ![TCP_filtered](img/TCP_filtered.png)
-  
+
 - python编程
   
   ![TCP_connect_scan_filtered_code](img/TCP_connect_scan_filtered_code.png)
@@ -508,12 +509,9 @@ Hping3：Hping3也可以对目标端口进行扫描。Hping3支持指定TCP各�
 
 - [Port scanning using Scapy - Infosec Resources (infosecinstitute.com)](https://resources.infosecinstitute.com/topic/port-scanning-using-scapy/)
 - [自己动手编程实现并讲解TCP connect scan/TCP stealth scan/TCP XMAS scan/UDP scan_jackcily的博客-CSDN博客](https://blog.csdn.net/jackcily/article/details/83117884)
-
 - [课件第五章](https://c4pr1c3.github.io/cuc-ns-ppt/chap0x05.md.html#/tcp-xmas-scan)
-
 - [课本第五章](https://c4pr1c3.gitee.io/cuc-ns/chap0x05/main.html)
-
 - [CUCCS/2020-ns-public-LyuLumos](https://github.com/CUCCS/2020-ns-public-LyuLumos/tree/ch0x05/ch0x05#tcp-connect-scan)
-
 - [Nmap、Zmap、Masscan](https://blog.51cto.com/xiaogongju/2068513)
+- [Nmap扫描原理及用法](https://blog.csdn.net/qincode/article/details/25196275)
 
